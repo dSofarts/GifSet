@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="table">
+            <table>
+                <tr><th>Код Валюты</th><th>Курс в рублях</th></tr>
+                <tr><td>USD</td><td><span>70</span><span> RUB</span></td></tr>
+            </table>
+            <button id="btn" onclick='loadGif()'>Получить GIF</button>
+        </div>
+        <div id="gif-field"></div>
+    </div>
+</body>
+</html>
