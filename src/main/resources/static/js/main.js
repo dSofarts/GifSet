@@ -1,3 +1,3 @@
 function loadGif() {
-    alert("OK");
+    alert("Hello");
 }
