@@ -39,3 +39,13 @@ table {
     background-color: #17A17A;
     transition: all .5s;
 }
+#gif-field {
+    margin-top: 20px;
+    width: 100%;
+}
+#gif {
+    text-align: center;
+}
+#gif img {
+    max-height: 300px;
+}
