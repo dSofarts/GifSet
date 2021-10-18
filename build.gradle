@@ -30,6 +30,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.json:json:20210307'
+    implementation 'me.xethh.utils:DateUtils:6.0.0.RC9'
 }
 
 dependencyManagement {

@@ -11,8 +11,8 @@
     <div class="container">
         <div id="table">
             <table>
-                <tr><th>Код Валюты</th><th>Курс в рублях</th></tr>
-                <tr><td>USD</td><td><span>70</span><span> RUB</span></td></tr>
+                <tr><th>Код Валюты</th><th>Курс в рублях</th><th>Изменение за день</th></tr>
+                <tr><td>USD</td><td><span id="new-curr" th:text="${newCurr}"></span><span class="name-curr"> RUB</span></td><td><span id="past-curr" th:text="${pastCurr}"></span><span class="name-curr"> RUB</span></td></tr>
             </table>
             <button id="btn" onclick='loadGif()'>Получить GIF</button>
         </div>
