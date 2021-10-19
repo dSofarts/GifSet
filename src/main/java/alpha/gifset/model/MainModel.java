@@ -31,4 +31,10 @@ public class MainModel {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(date.getTime());
     }
+    public static String gifUrl(String gifUrl, String gifApi, String tag) {
+        String staticPartOfCode1 = "/random?api_key=";
+        String staticPartOfCode2 = "&tag=";
+        String urlAddress = gifUrl + staticPartOfCode1 + gifApi + staticPartOfCode2 + tag;
+        return urlAddress;
+    }
 }

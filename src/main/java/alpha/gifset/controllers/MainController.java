@@ -7,9 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import static alpha.gifset.model.GifModel.gifAddUrl;
 import static alpha.gifset.model.MainModel.getDateYesterday;
 import static alpha.gifset.model.MainModel.getUrlContent;
+import static alpha.gifset.model.MainModel.gifUrl;
 
 @Controller
 public class MainController {
@@ -61,7 +61,7 @@ public class MainController {
         } else {
             titleGif = "УВЫ, ВЫ БЕДНЫ";
         }
-        String gifIMG = gifAddUrl(tag, gif_url, gif_api);
+        String gifIMG = getUrlContent(gifUrl(gif_url, gif_api, tag));
         String gifImgUrl = "";
         if (!gifIMG.isEmpty()) {
             JSONObject gifImgJson = new JSONObject(gifIMG);
